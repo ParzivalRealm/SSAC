@@ -45,7 +45,7 @@ function Navbar(props){
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn">Get started</a>
+      <a class="btn btn-primary">Get started</a>
     </div>
   </div>
   );

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+hr {
+  background: webkit-gradient(linear,left top,right top,from(#ffbc00),to(#f70656))
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
