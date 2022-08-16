@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-hr {
-  background: webkit-gradient(linear,left top,right top,from(#ffbc00),to(#f70656))
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+  background-color: #007BFA;
+}
+
+.demo-bg {
+
+  opacity: 0.9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.demo-content {
+  position: relative;
 }
 
 body {
