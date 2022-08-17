@@ -21,6 +21,16 @@
   position: relative;
 }
 
+.divider:after{
+  background-color: #007BFA;
+  opacity: 20%;
+}
+
+.divider:before{
+  background-color: #007BFA;
+  opacity: 20%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -5,6 +5,7 @@ import Servicescta from './Servicescta.js'
 import Titledivider from './Titledivider.js'
 import Stories from './Stories.js'
 import Moreaboutus from './Moreaboutus.js'
+import Footer from './footer.js'
 
 import './App.css';
 import PreviousMap from 'postcss/lib/previous-map';
@@ -18,6 +19,7 @@ function App() {
     <Servicescta />
       <Stories />
       <Moreaboutus />
+      <Footer/>
 
     </div>
   );
