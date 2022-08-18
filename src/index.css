@@ -23,7 +23,7 @@
 
 .divider:after{
   background-color: white;
-  opacity: 20%;
+  opacity: 80%;
 }
 
 
@@ -44,10 +44,59 @@
 
 .divider:before{
   background-color: white;
-  opacity: 20%;
+  opacity: 80%;
+}
+
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):focus), 
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):hover) {
+background-color: whitesmoke;
+--tw-bg-opacity: 0.1;
+border-radius: 0%;
+}
+
+.menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active), 
+.menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
+--tw-bg-opacity: 1;
+background-color: whitesmoke;
+--tw-text-opacity: 1;
+color: #064B79;
+font-weight: 400;
+
+}
+
+.menu[class*=" p-"] li > *, 
+.menu[class^="p-"] li > * {
+border-radius: 0%;
 }
 
 
+.menu :where(li.bordered > *) {
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+
+.menu li.hover-bordered a {
+  border-bottom-width: 4px;
+  border-left-width: 0px;
+  border-color: transparent;
+}
+
+.menu li.hoveer-bordered a {
+  border-left-width: 4px;
+  border-bottom-width: 0px;
+  border-color: transparent;
+}
+
+.btn-ghost:hover, 
+.btn-ghost.btn-active {
+--tw-border-opacity: 0;
+background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+--tw-bg-opacity: 0.0;
+}
+.btn-ghost:focus-visible {
+  outline: 2px solid currentColor;
+}
 
 
 

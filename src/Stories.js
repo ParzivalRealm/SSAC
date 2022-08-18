@@ -10,7 +10,7 @@ function Stories(){
         <h2 class="card-title text-base-100">Offshore Crude Mixing Control System</h2>
         <p class="text-base-100">Solid State Automation designed and developed a control system for an off shore mixing platform.  The system is housed in a Nema 7 enclosure and allows operator interface via an IS track pad.  This allows the operator the full functionality of an HMI even in a hazardous environment.</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-accent text-base-100 rounded-none">Watch Video</button>
+          <button class="btn btn-primary text-base-100 rounded-none">Watch Video</button>
         </div>
       </div>
     </div>
@@ -21,13 +21,13 @@ function Stories(){
           <h2 class="card-title text-base-100 text-end justify-end">USS Nassau Ship Monitoring System</h2>
           <p class="text-base-100">The Beaumont Reserve Fleet required a monitoring system capable of tracking temperature, humidity, intrusion, corrosion, and fire protection. Additionally, they needed a system that could communicate all that information back to a central monitoring station. Solid State Automation installed a system aboard the USS Nassau that included 6 fire monitoring boxes, 12 humidty/temperature/air quality sensors, 2 intrusion detectors, and 3 current transducers to monitor ship power. All the information the monitoring system gathered was transmitted wirelessly over two miles back to the central monitoring station and displayed on a custom HMI. The system also included a solar panel and battery array that enabled the system to run even in the event of a shore power loss.</p>
           <div class="card-actions justify-start">
-            <button class="btn btn-accent text-base-100 rounded-none">Watch Video</button>
+            <button class="btn btn-primary text-base-100 rounded-none">Watch Video</button>
           </div>
         </div>
         <figure><img src="https://placeimg.com/400/400/arch" alt="Album"></img></figure>
       </div>
     </div>
-    <div class="divider"><button class="btn btn-accent text-base-100 rounded-none">See all</button></div> 
+    <div class="divider"><button class="btn btn-primary text-base-100 rounded-none">See all</button></div> 
 
   </div>
   </div>

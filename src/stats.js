@@ -1,6 +1,6 @@
 function stats(){
     return (
-        <div class="stats shadow-lg">
+        <div class="stats shadow-lg rounded-none">
         
             <div class="stat place-items-center w-72">
                 <div class="stat-title">Years of experience</div>
