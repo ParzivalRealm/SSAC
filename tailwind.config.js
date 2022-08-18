@@ -6,13 +6,13 @@ module.exports = {
       {
         mytheme: {
         
-          "primary": "#163355ff",
+          "primary": "#053C61",
                   
           "secondary": "#5C0029",
                   
-          "accent": "#F7E733",
+          "accent": "#68EDC6",
                   
-          "neutral": "#8a98a9ff",
+          "neutral": "#F0F0F0",
                   
           "base-100": "#FFFFFF",
                   
@@ -20,12 +20,12 @@ module.exports = {
                   
           "success": "#36D399",
                   
-          "warning": "#FBBD23",
+          "warning": "#064B79",
                   
-          "error": "#F87272",
+          "error": "#085A91",
         },
       },
-      "winter"
+      "winter", "business"
     ],
   },
   plugins: [require("daisyui")],

@@ -22,14 +22,34 @@
 }
 
 .divider:after{
-  background-color: #007BFA;
+  background-color: white;
   opacity: 20%;
 }
 
+
+.divider.accent:after{
+  background: linear-gradient(90deg,white 0%, #064B79 100%);
+  opacity: 0%;
+  height: 4px;
+
+}
+
+.divider.accent:before{
+  background: linear-gradient(90deg,white 0%, white 100%);
+  opacity: 100%;
+  height: 4px;
+  width: 500rem
+}
+
+
 .divider:before{
-  background-color: #007BFA;
+  background-color: white;
   opacity: 20%;
 }
+
+
+
+
 
 body {
   margin: 0;

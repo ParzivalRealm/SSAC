@@ -12,13 +12,15 @@ import PreviousMap from 'postcss/lib/previous-map';
 
 function App() {
   return (
-    <div data-theme="winter">
+    <div >
       <Navbar />
       <Hero />
-      <Titledivider/>
-    <Servicescta />
-      <Stories />
-      <Moreaboutus />
+      <div class="px-72 mx-auto py-10 bg-white">
+        <Titledivider/>
+        <Servicescta />
+        <Stories />
+        <Moreaboutus />
+      </div>
       <Footer/>
 
     </div>
