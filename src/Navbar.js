@@ -7,7 +7,7 @@ import Logo2 from './Logo.js'
  function Navbar(){ 
 
   return(
-    <div class="navbar bg-base-100 fixed z-10"  >
+    <div class="navbar bg-base-100 fixed z-10 shadow-sm"  >
       <div class="flex-1" >
         <a class="btn btn-ghost normal-case text-xl"><Logo2/></a>
       </div>
@@ -19,7 +19,7 @@ import Logo2 from './Logo.js'
               Services
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
               </a>
-              <ul class="p-2 bg-base-100 font-light">
+              <ul class="p-2 bg-base-100 font-light shadow-xl">
               <li class="hoveer-bordered"><a>Full Turn-Key Solutions</a></li>
               <li class="hoveer-bordered"><a>PLC Programming and Engineering</a></li>
               <li class="hoveer-bordered"><a>Panel Design and Schematics</a></li>

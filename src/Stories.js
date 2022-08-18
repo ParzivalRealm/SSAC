@@ -27,7 +27,7 @@ function Stories(){
         <figure><img src="https://placeimg.com/400/400/arch" alt="Album"></img></figure>
       </div>
     </div>
-    <div class="divider"><button class="btn btn-primary text-base-100 rounded-none">See all</button></div> 
+    <div class="divideer w-full"><button class="btn btn-primary text-base-100 rounded-none">See all</button></div> 
 
   </div>
   </div>
