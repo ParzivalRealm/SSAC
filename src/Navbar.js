@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Logo2 from './Logo.js'
+import {Link} from 'react-router-dom';
+
 
 
 
@@ -13,12 +15,14 @@ import Logo2 from './Logo.js'
       </div>
       <div class="flex-none font-light" >
         <ul class="menu menu-horizontal p-0">
-        <li class="hover-bordered"><a >Home</a></li>
+          <Link to="/"><li class="hover-bordered"><a >Home</a></li></Link>
+        
           <li tabindex="0" class="hover-bordered" >
-              <a>
+            <Link to="/Services">
               Services
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-              </a>
+            </Link>
+              
               <ul class="p-2 bg-base-100 font-light shadow-xl">
               <li class="hoveer-bordered"><a>Full Turn-Key Solutions</a></li>
               <li class="hoveer-bordered"><a>PLC Programming and Engineering</a></li>
