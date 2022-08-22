@@ -5,6 +5,8 @@ import { BrowserRouter,
     Route, } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Successstory from './Successstory';
+import Success from './Success';
 import reportWebVitals from './reportWebVitals';
 import Services from './Services.js'
 
@@ -15,6 +17,7 @@ root.render(
   <Routes>
     <Route path="/" element={<App />} />
     <Route path="/Services" element={<Services />} />
+    <Route path="/Success" element={<Success />} />
   </Routes>
 </BrowserRouter>
 );

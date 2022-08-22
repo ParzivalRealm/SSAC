@@ -3,13 +3,10 @@ import Logo2 from './Logo.js'
 import {Link} from 'react-router-dom';
 
 
-
-
-
  function Navbar(){ 
 
   return(
-    <div class="navbar bg-base-100 fixed z-10 shadow-sm"  >
+    <div class="navbar bg-base-100 sticky top-0 z-10 shadow-sm"  >
       <div class="flex-1" >
         <a class="btn btn-ghost normal-case text-xl"><Logo2/></a>
       </div>
@@ -29,7 +26,7 @@ import {Link} from 'react-router-dom';
               <li class="hoveer-bordered"><a>Panel Design and Schematics</a></li>
               </ul>
           </li>
-          <li class="hover-bordered"><a >Success stories</a></li>
+          <li class="hover-bordered"><Link to="/Success">Success Stories</Link></li>
           <li class="hover-bordered"><a >About us</a></li>
         </ul>
       </div>

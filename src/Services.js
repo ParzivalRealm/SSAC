@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 export default function Services(){
     return(
         <div>
-    
+            <Navbar />
             <div className='w-full h-[25rem] flex '>
                 <div class="hero place-items-center justify-start w-full px-72"style={{backgroundImage:`url(${mainbanner})`}}>
                     <div class="text-base-100" >
@@ -17,8 +17,8 @@ export default function Services(){
             </div>
             <div>
                 <div>
-                    <div class="sticky top-0 ">
-                        <div class="tabs py-10 px-20 z-10 bg-white">
+                    <div class="sticky top-10 shadow-sm">
+                        <div class="tabs py-10 px-20 z-10 place-items-center justify-center bg-white">
                             <a class="tab tab-bordered">Engineering</a> 
                             <a class="tab tab-bordered tab-active">Full Key-Turn solutions</a> 
                             <a class="tab tab-bordered">Schematics</a>
@@ -28,11 +28,11 @@ export default function Services(){
                         <div>
                             <div class="px-20 py-20 grid grid-cols-1 place-items-center w-full bg-neutral">
                                 <div class="px-5">
-                                <h1 class="text-2xl leading-loose bg-neu">Description</h1>
-                                <p class="leading-loose">Solid State Automation offers complete turn-key solutions for PLC based control systems for multiple applications including retrofit projects as well as complete systems from scratch.  This includes programming and system design, drawings and documentation, and system install and commissioning.  Solid State has the resources and staff to program S7 based PLC systems, WinCC SCADA applications and WinCC Flex interfaces, as well as the capacity to assemble control panels and motor protection gear in our panel shop.  Solid State also has in-depth knowledge of the Siemens variable frequency drives and process transmitters and extensive experience in generating drawings and manuals for all types of systems and has direct experience working with oil and gas, manufacturing, municipalities, and military markets.</p>
+                                <h1 class="text-2xl leading-loose font-light">Description</h1>
+                                <p class="leading-loose font-light">Solid State Automation offers complete turn-key solutions for PLC based control systems for multiple applications including retrofit projects as well as complete systems from scratch.  This includes programming and system design, drawings and documentation, and system install and commissioning.  Solid State has the resources and staff to program S7 based PLC systems, WinCC SCADA applications and WinCC Flex interfaces, as well as the capacity to assemble control panels and motor protection gear in our panel shop.  Solid State also has in-depth knowledge of the Siemens variable frequency drives and process transmitters and extensive experience in generating drawings and manuals for all types of systems and has direct experience working with oil and gas, manufacturing, municipalities, and military markets.</p>
                                 </div>
                             </div>
-                            <div class="px-20 pt-10 text-center"><h1 class="text-2xl leading-loose">Gallery</h1></div>
+                            <div class="px-20 pt-10 text-center"><h1 class="text-2xl leading-loose font-light">Gallery</h1></div>
                             <div class="px-20 py-10 grid grid-rows-2 grid-flow-row place-items-center w-full">
                                 <div class="grid grid-cols-3">
                                     <div class="px-5">
