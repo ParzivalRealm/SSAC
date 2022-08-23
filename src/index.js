@@ -13,7 +13,7 @@ import Services from './Services.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
   <Routes>
     <Route path="/SSAC" element={<App />} />
     <Route path="/" element={<App />} />
