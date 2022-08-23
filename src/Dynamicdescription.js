@@ -18,12 +18,15 @@ export default function Dynamicdescription() {
     [0, 0, 1],
   ];
 
+  const [galleryPhotos, setGalleryPhotos] = useState(6);
+
   const [description, setDescription] = useState(descriptions.engineering);
   const [clicked, setClicked] = useState(clickedstyles[0]);
 
-  function handleClick(state, id) {
+  function handleClick(state, id, photos) {
     setDescription(descriptions[state]);
     setClicked(clickedstyles[id]);
+    setGalleryPhotos(photos)
     console.log(clicked[0]);
   }
   return (
@@ -35,7 +38,7 @@ export default function Dynamicdescription() {
               clicked[0] == 1 ? "tab-active" : ""
             }`}
             id="1"
-            onClick={() => handleClick("engineering", 0)}
+            onClick={() => handleClick("engineering", 0, 6)}
           >
             Engineering
           </a>
@@ -44,7 +47,7 @@ export default function Dynamicdescription() {
               clicked[1] == 1 ? "tab-active" : ""
             }`}
             id="2"
-            onClick={() => handleClick("KeyTurn", 1)}
+            onClick={() => handleClick("KeyTurn", 1, 5)}
           >
             Full Key-Turn solutions
           </a>
@@ -53,7 +56,7 @@ export default function Dynamicdescription() {
               clicked[2] == 1 ? "tab-active" : ""
             }`}
             id="3"
-            onClick={() => handleClick("Schematics", 2)}
+            onClick={() => handleClick("Schematics", 2, 4)}
           >
             Schematics
           </a>
@@ -69,7 +72,7 @@ export default function Dynamicdescription() {
           </div>
         </div>
       </div>
-      <DynamicGallery />
+      <DynamicGallery photos={galleryPhotos}/>
     </div>
   );
 }
