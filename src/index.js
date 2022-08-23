@@ -17,8 +17,8 @@ root.render(
   <Routes>
     <Route path="/SSAC" element={<App />} />
     <Route path="/" element={<App />} />
-    <Route path="/SSAC/Services" element={<Services />} />
-    <Route path="/SSAC/Success" element={<Success />} />
+    <Route path="/Services" element={<Services />} />
+    <Route path="/Success" element={<Success />} />
   </Routes>
 </BrowserRouter>
 );
