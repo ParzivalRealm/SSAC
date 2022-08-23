@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import DynamicGallery from "./DynamicGallery";
 
-export default function Dynamicdescription() {
+export default function Dynamicdescription(name) {
   const descriptions = {
     engineering:
       "Solid State Automation offers complete engineering solutions for the automation of your manufacturing processes. We offer a wide range of services to meet your needs. We can help you with the following:",
@@ -20,15 +20,32 @@ export default function Dynamicdescription() {
 
   const [galleryPhotos, setGalleryPhotos] = useState(6);
 
-  const [description, setDescription] = useState(descriptions.engineering);
-  const [clicked, setClicked] = useState(clickedstyles[0]);
+  const [description, setDescription] = useState(descriptions[name.name]);
+  const [clicked, setClicked] = useState(0);
 
   function handleClick(state, id, photos) {
     setDescription(descriptions[state]);
     setClicked(clickedstyles[id]);
-    setGalleryPhotos(photos)
+    setGalleryPhotos(photos);
     console.log(clicked[0]);
   }
+
+  useEffect(() => {
+    if (name.name == "engineering") {
+      setDescription(descriptions[name.name]);
+      setClicked(clickedstyles[0]);
+      setGalleryPhotos(6);
+    } else if (name.name == "KeyTurn") {
+      setDescription(descriptions[name.name]);
+      setClicked(clickedstyles[1]);
+      setGalleryPhotos(5)
+    } else if (name.name == "Schematics") {
+      setDescription(descriptions[name.name]);
+      setClicked(clickedstyles[2]);
+      setGalleryPhotos(4);
+    }
+  }, [name.name]);
+
   return (
     <div>
       <div class="sticky top-10 shadow-sm">
@@ -72,7 +89,7 @@ export default function Dynamicdescription() {
           </div>
         </div>
       </div>
-      <DynamicGallery photos={galleryPhotos}/>
+      <DynamicGallery photos={galleryPhotos} />
     </div>
   );
 }

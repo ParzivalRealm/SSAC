@@ -1,11 +1,12 @@
 import mainbanner from "./mainbanner4.jpg";
 import Navbar from "./Navbar";
+import {useLocation} from 'react-router-dom';
 
 
 import Dynamicdescription from "./Dynamicdescription";
 import DynamicGallery from "./DynamicGallery";
 export default function Services() {
-
+  let location = useLocation();
   
 
   return (
@@ -33,7 +34,7 @@ export default function Services() {
         </div>
       </div>
       <div>
-        <Dynamicdescription />
+        <Dynamicdescription name={location.state}/>
       </div>
     </div>
   );

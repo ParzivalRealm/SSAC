@@ -118,7 +118,7 @@ border-radius: 0%;
   border-color: transparent;
 }
 
-.menu li.hoveer-bordered a {
+.menu li.hoveer-bordered a{
   border-left-width: 4px;
   border-bottom-width: 0px;
   border-color: transparent;
