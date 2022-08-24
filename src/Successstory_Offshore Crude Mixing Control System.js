@@ -1,6 +1,16 @@
 import mainbanner from "./mainbanner4.jpg";
 import Navbar from "./Navbar";
+import { useState } from "react";
+import { useEffect } from "react";
+
+
+
+import Dynamicdescription from "./DynamicdescriptionSuccessstory";
+
 export default function Successstory() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Navbar />
@@ -31,32 +41,8 @@ export default function Successstory() {
           manage their performance
         </h1>
       </div>
-      <div class="shadow-sm">
-        <div class="tabs py-10 px-20 z-10  bg-white">
-          <a class="tab tab-bordered">Goals</a>
-          <a class="tab tab-bordered tab-active">Challenges</a>
-          <a class="tab tab-bordered">Results</a>
-        </div>
-      </div>
-      <div class="w-full flex   min-h-full py-10 px-20 shadow-sm">
-        <div class="grid w-full min-h-full grid-cols-3 text-center ">
-          <div class="grid grid-rows-3 min-h-full h-72 justify-center align-middle ">
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-          </div>
-          <div class="grid grid-rows-3 min-h-full h-72 justify-center align-middle ">
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-          </div>
-          <div class="grid grid-rows-3 min-h-full h-72 justify-center align-middle ">
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-            <h1>&bull; Goals</h1>
-          </div>
-        </div>
-      </div>
+      <Dynamicdescription/>
+
       <div class="px-20 pt-10 text-center ">
         <h1 class="text-2xl leading-loose font-light">Gallery</h1>
       </div>
@@ -68,7 +54,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 1</h2>
               </div>
             </div>
           </div>
@@ -78,7 +64,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 2</h2>
               </div>
             </div>
           </div>
@@ -88,7 +74,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 3</h2>
               </div>
             </div>
           </div>
@@ -101,7 +87,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 4</h2>
               </div>
             </div>
           </div>
@@ -111,7 +97,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 5 </h2>
               </div>
             </div>
           </div>
@@ -121,7 +107,7 @@ export default function Successstory() {
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
               <div class="card-body place-items-center">
-                <h2 class="card-title text-primary">System Commissioning</h2>
+                <h2 class="card-title text-primary">Example 6</h2>
               </div>
             </div>
           </div>

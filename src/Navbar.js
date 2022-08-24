@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
   return(
     <div class="navbar bg-base-100 sticky top-0 z-10 shadow-sm"  >
       <div class="flex-1" >
-        <a class="btn btn-ghost normal-case text-xl"><Logo2/></a>
+      <Link to="/" ><a class="btn btn-ghost normal-case text-xl"><Logo2/></a></Link>
       </div>
       <div class="flex-none font-light" >
         <ul class="menu menu-horizontal p-0">
@@ -27,7 +27,7 @@ import {Link} from 'react-router-dom';
               </ul>
           </li>
           <li class="hover-bordered"><Link to="/Success">Success Stories</Link></li>
-          <li class="hover-bordered"><a >About us</a></li>
+          <Link to="/Aboutus" ><li class="hover-bordered"><a >About us</a></li></Link>
         </ul>
       </div>
     </div>

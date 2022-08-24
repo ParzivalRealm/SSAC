@@ -1,12 +1,17 @@
 import mainbanner from "./mainbanner4.jpg";
 import Navbar from "./Navbar";
 import {useLocation} from 'react-router-dom';
+import Footer from "./footer";
 
 
 import Dynamicdescription from "./Dynamicdescription";
 import DynamicGallery from "./DynamicGallery";
+import { useEffect } from "react";
 export default function Services() {
   let location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
 
   return (
@@ -36,6 +41,7 @@ export default function Services() {
       <div>
         <Dynamicdescription name={location.state}/>
       </div>
+      <Footer />
     </div>
   );
 }

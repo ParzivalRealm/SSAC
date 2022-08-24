@@ -1,197 +1,244 @@
-import Navbar from "./Navbar";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Footer from "./footer";
-export default function Success() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  return (
-    
-    <div>
-      <Navbar />
-      <div class=" flex flex-col justify-center w-full shadow-sm h-[25rem] place-items-center text-primary">
-        <div class="font-light text-center pb-20">
-          <h1 class="text-3xl font-normal">
-            Solid State Automatation and Controls Stories
-          </h1>
-          <p class="text-xl">Know about our success stories</p>
-        </div>
-        <div class="flex flex-row place-content-evenly w-full">
-          <div>
-            <select class="select select-primary w-full max-w-xs rounded-none">
-              <option disabled selected>
-                Industry
-              </option>
-              <option>Oil</option>
-              <option>Manufacturing</option>
-              <option>Military</option>
-              <option>Government</option>
-            </select>
+export default function DynamicGallery(photos) {
+  const gallery = [
+    {
+      6: (
+        <div class="px-20 py-10 bg-neutral grid grid-rows-1 gap-8">
+        <div class="grid grid-cols-3 place-items-center gap-8 ">
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 1</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
           </div>
-          <div class="flex">
-            <select class="select select-primary w-full max-w-xs rounded-none mr-5">
-              <option disabled selected>
-                Service
-              </option>
-              <option>Full Turn-Key Solutions</option>
-              <option>PLC Programming and Engineering</option>
-              <option>Panel Design and Schematics</option>
-            </select>
-            <button class="btn rounded-none text-primary shadow-primary shadow-">
-              Filter
-            </button>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 2</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 3</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 4</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 5</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 6</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
+      ),
+      5: (
+        <div class="px-20 py-10 bg-neutral grid grid-rows-1 gap-8">
+        <div class="grid grid-cols-3 place-items-center gap-8 ">
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 7</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 8</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 9</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 10</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 11</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+        
+      </div>
+      ),
+      4: (
+        <div class="px-20 py-10 bg-neutral grid grid-rows-1 gap-8">
+        <div class="grid grid-cols-3 place-items-center gap-8 ">
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 12</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 13</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 14</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
+            <div class="card-body ">
+              <h2 class="card-title">Service 15</h2>
+              <div class="h-full flex place-items-center">
+                <p>
+                  Solid State Automation designed and developed a control system
+                  for an off shore mixing platform.
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+        
+      </div>
+      ),
+    },
+  ];
 
-      <div class="px-20 py-10 bg-neutral grid grid-rows-2 gap-8">
-        <div class="grid grid-cols-5 place-items-center gap-8 ">
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-5 place-items-center gap-8 ">
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-          <div class="card h-96 bg-base-100 shadow-xl  rounded-none">
-            <div class="card-body ">
-              <h2 class="card-title">Offshore Crude Mixing Control System</h2>
-              <div class="h-full flex place-items-center">
-                <p>
-                  Solid State Automation designed and developed a control system
-                  for an off shore mixing platform.
-                </p>
-              </div>
-              <div class="card-actions justify-end">
-                <Link to="Successstory/Offshore_Crude_Mixing"><button class="btn btn-primary text-base-100 rounded-none">Read More</button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  );
+
+
+  return gallery[0][photos["photos"]];
 }

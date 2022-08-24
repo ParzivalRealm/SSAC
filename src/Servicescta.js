@@ -3,9 +3,13 @@ import Panel from './panelbuild.jpeg'
 import Schemas from './scheme.jpg'
 import {Link} from 'react-router-dom';
 function Servicescta(){
-  return(
 
-     
+
+  return(
+    <div class="pb-36">
+    <div class="w-full flex text-start pb-12 pt-10">
+      <h1 className='normal-case text-3xl m-auto align-middle font-light '>How can we help you?</h1>
+    </div>
       <div className='flex justify-around'>
         <div class="card w-96 bg-base-100 shadow-xl rounded-none ">
           <figure class="demo-wrap"><img class="demo-bg"src={Plc} alt="Shoes" /></figure>
@@ -39,6 +43,7 @@ function Servicescta(){
             </div>
           </div>
         </div>
+      </div>
       </div>
 
 

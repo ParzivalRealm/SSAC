@@ -1,6 +1,11 @@
 import mainbanner from './mainbanner4.jpg'
 import Separatortext from './separatortext'
+
 function Hero(){
+
+  function handleClick(){
+    document.getElementById('scroll').scrollIntoView({behavior: 'smooth',});
+  }
   return(
     <div>
       <div class="hero h-[35rem]"style={{backgroundImage:`url(${mainbanner})`}}>
@@ -13,14 +18,15 @@ function Hero(){
             <div class="grid flex-grow card w-full place-items-center"><h1 class="text-2xl">We help our customers to reach their goals</h1></div>
           </div>
           <div class="w-full flex justify-center p-16">
-              <button class="btn rounded-none text-primary shadow-primary shadow-">Get Started</button>
+              <button class="btn rounded-none text-primary shadow-primary shadow-" onClick={handleClick}>Get Started</button>
           </div>
            
             
           </div>
         </div>
       </div>
-      <Separatortext />
+     <Separatortext />
+     <div class="p-0 m-0"id="scroll"></div>
     </div>
   )
 }

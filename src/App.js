@@ -16,7 +16,6 @@ function App() {
       <Navbar />
       <Hero />
       <div class="px-72 mx-auto py-10 bg-white">
-        <Titledivider/>
         <Servicescta />
         <Stories />
         <Moreaboutus />
