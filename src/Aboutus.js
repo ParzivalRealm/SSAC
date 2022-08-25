@@ -3,12 +3,21 @@ import mainbanner from "./mainbanner4.jpg";
 import Dynamicdescription from "./Dynamicdescriptionaboutus";
 import Dynamicmenu from "./Dynamicmenu";
 import Footer from "./footer";
+import { Transition } from '@headlessui/react'
 
 import { Link } from "react-router-dom";
 export default function Aboutus() {
   return (
     <div>
       <Navbar />
+      <Transition
+      show={true}
+      appear={true}
+    enter="transition-opacity duration-300"
+    enterFrom="opacity-0"
+    enterTo="opacity-100"
+    
+  >
       <div className="w-full h-[25rem] flex ">
         <div
           class="hero place-items-center justify-start w-full px-72"
@@ -50,6 +59,7 @@ export default function Aboutus() {
       <Dynamicmenu />
      
      <Footer />
+     </Transition>
     </div>
   );
 }

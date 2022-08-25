@@ -2,6 +2,25 @@ import mainbanner from "./mainbanner4.jpg";
 import Navbar from "./Navbar";
 import {useLocation} from 'react-router-dom';
 import Footer from "./footer";
+import { Transition } from '@headlessui/react'
+import {
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  batch,
+  Fade,
+  FadeIn,
+  FadeOut,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  StickyOut,
+  Zoom,
+  ZoomIn,
+  ZoomOut,
+} from "react-scroll-motion";
 
 
 import Dynamicdescription from "./Dynamicdescription";
@@ -15,8 +34,18 @@ export default function Services() {
   
 
   return (
+    
     <div>
       <Navbar />
+      
+      <Transition
+      show={true}
+      appear={true}
+    enter="transition-opacity duration-300"
+    enterFrom="opacity-0"
+    enterTo="opacity-100"
+    
+  >
       <div className="w-full h-[25rem] flex ">
         <div
           class="hero place-items-center justify-start w-full px-72"
@@ -38,10 +67,20 @@ export default function Services() {
           </div>
         </div>
       </div>
+     
+      
+     
+      
       <div>
-        <Dynamicdescription name={location.state}/>
+        
       </div>
+     
+      <Dynamicdescription name={location.state}/>
+   
+      
+      
       <Footer />
+      </Transition>
     </div>
   );
 }

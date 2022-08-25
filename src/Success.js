@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
+import { Transition } from '@headlessui/react'
 export default function Success() {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -10,6 +11,12 @@ export default function Success() {
     
     <div>
       <Navbar />
+      <Transition
+      show={true}
+      appear={true}
+    enter="transition-opacity duration-300"
+    enterFrom="opacity-0"
+    enterTo="opacity-100">
       <div class=" flex flex-col justify-center w-full shadow-sm h-[25rem] place-items-center text-primary">
         <div class="font-light text-center pb-20">
           <h1 class="text-3xl font-normal">
@@ -192,6 +199,7 @@ export default function Success() {
         </div>
       </div>
       <Footer />
+      </Transition>
     </div>
   );
 }
